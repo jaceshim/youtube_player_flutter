@@ -157,8 +157,8 @@ class _ProgressBarState extends State<ProgressBar> {
         constraints: BoxConstraints.expand(height: 7.0 * 2),
         child: CustomPaint(
           painter: _ProgressBarPainter(
-            progressWidth: 2.0,
-            handleRadius: 7.0,
+            progressWidth: 5.0,
+            handleRadius: 15.0,
             playedValue: _playedValue,
             bufferedValue: _bufferedValue,
             colors: widget.colors,
