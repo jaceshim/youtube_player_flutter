@@ -257,7 +257,7 @@ class _YoutubePlayerState extends State<YoutubePlayer> {
             controller.value.copyWith(webViewController: _cachedWebController),
           )
           ..seekTo(_cachedPosition);
-        Future.delayed(Duration(microseconds: 500), () => controller.play());
+        Future.delayed(Duration(microseconds: 1000), () => controller.play());
       }
     }
     if (mounted) setState(() {});
